@@ -17,6 +17,6 @@ class Solution:
         return self.tail_recursion(number, ele1, ele2)
 
     def tail_recursion(self, n, ele1, ele2):
-        if n < 3:
+        if n <= 2:
             return ele2
         return self.tail_recursion(n - 1, ele2, ele1 + ele2)
